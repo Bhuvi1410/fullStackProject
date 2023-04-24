@@ -1,0 +1,85 @@
+<!--Courses offer for lower and higher grades-->
+
+<div class="d-flex flex-row bd-highlight mb-3" id="lowerGrade" *ngIf="checkLowerGrade()">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/maths.jpg" width="200" height="200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Maths</h5>
+          <p class="card-text">Mathematics is the basic stepstone for all the following proffessional learnings from cience to space, it serves the practical explanation.</p>
+        </div>
+      </div>
+    </label>
+  </div>
+  &nbsp;&nbsp;
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+    <label class="form-check-label" for="flexCheckChecked">
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/science.jpg" width="200" height="200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Science</h5>
+          <p class="card-text">Science is Scientific, Comprehensive, Investigative and Exploration of Natural and Chemical Environmental effects.</p>
+        </div>
+      </div>
+    </label>
+  </div>
+  &nbsp;
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+    <label class="form-check-label" for="flexCheckChecked">
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/download (1).jpg" width="200" height="200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Social</h5>
+          <p class="card-text"> Social is the subject of learning and exploring historical events, geographical values, civil laws and economical status of a country.</p>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+
+
+<div class="d-flex flex-row bd-highlight mb-3" id="higherGrade" *ngIf="!checkLowerGrade()">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/images (6).jpg" width="200" height="200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bio-Maths</h5>
+          <p class="card-text">This course ia complete package course of major subjects of Bio-Maths group, covering Maths-Physics-Chemistry-Biology.</p>
+        </div>
+      </div>
+    </label>
+  </div>
+  &nbsp;
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+    <label class="form-check-label" for="flexCheckChecked">
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/download (2).jpg" width="200" height="200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Computer Science</h5>
+          <p class="card-text">This Course includes Computer Science, Physics, Chemistry and Mathematics trained by experienced handlers.</p>
+        </div>
+      </div>
+    </label>
+  </div>
+  &nbsp;
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+    <label class="form-check-label" for="flexCheckChecked">
+      <div class="card" style="width: 18rem;">
+        <img src="./assets/download (3).jpg" width="200" height="200" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Commerce</h5>
+          <p class="card-text">Bundled package for commerce group includes finance, accounting, commerce and business-maths.</p>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+<button class="btn btn-info">View All Courses</button>
