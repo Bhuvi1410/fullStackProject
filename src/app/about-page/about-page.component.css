@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  sans-serif;
+}
+.about-us{
+  height: 95vh;
+  width: 100%;
+  padding: 90px 0;
+  background:linear-gradient(to right,#c2eb30, #f8eb32 0%, rgb(43, 202, 241) 100%);
+}
+.pic{
+  height: auto;
+}
+.about{
+  width: 1100px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+.image{
+    width: 100%;
+    top:60px;
+   
+
+}
+p{
+  font-style: italic;
+}

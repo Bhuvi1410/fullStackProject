@@ -1,0 +1,177 @@
+.box1{
+  color: #fff;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  font-family: sans-serif;
+}
+form input{
+  box-shadow:3px 3px 5px aquamarine ;
+ }
+
+
+.box {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-53%, -50%);
+  width: 35rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  background:linear-gradient(to right,#c2eb30, #f8eb32 0%, rgb(43, 202, 241) 100%);
+  border-radius: 0.225rem;
+  border-style: inset;
+  box-shadow: 5px 5px 10px #fff;
+  
+}
+
+.box .inputBox {
+  position: relative;
+}
+
+.box .inputBox input {
+  width: 100%;
+  padding: 0.325rem 0;
+  font-size: 1.2rem;
+  color: #fff;
+  letter-spacing: 0.062rem;
+  margin-bottom: 2.875rem;
+  border: none;
+  border-bottom: 0.065rem solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.box .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.625rem 0;
+  font-size: 1.2rem;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label,
+.box .inputBox input:not([value=""]) ~ label {
+  top: -1.125rem;
+  left: 0;
+  color:#4ec7c1;
+  font-size: 0.75rem;
+}
+
+.box input[type="submit"] {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #42ac72;
+  padding: 0.625rem 2.75rem;
+  cursor: pointer;
+  border-radius: 0.312rem;
+  font-size: 1.4rem;
+}
+
+.box input[type="submit"]:hover {
+  background-color: #34aa7d;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  height: 3.5rem;
+  background-size: 300% 300%;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  transition: .5s;
+  border: 4px solid transparent;
+  background-image: linear-gradient(#212121,#212121),
+        linear-gradient(120deg,#12faf6,#fff 32%);
+  background-origin: border-box;
+  background-clip: content-box,border-box;
+  cursor: pointer;
+  
+}
+
+#container-stars{
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+
+}
+
+.btn:hover span{
+  color:#12faf6;
+}
+.btn:hover #container-stars{
+  z-index:1;
+background-color: #121212;
+}
+.btn:hover{
+  transform: scale(1.1);
+  background:transparent;
+  color: #12faf6;
+  box-shadow: 0 0 25px #12faf649;
+}
+.btn:active{
+  border: 4px solid #12faf6;
+  animation: none;
+}
+#stars{
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+#stars::after{
+  content:"";
+  position: absolute;
+  top:-10rem;
+  left: -100rem;
+  width:100%;
+  height: 100%;
+  animation:anirotate 90s linear infinite;
+  background-image: radial-gradient(#fff 1px, transparent 1%);
+  background-size: 50px 50px;
+  }
+  #stars::before{
+  content:"";
+  position: absolute;
+  top:0rem;
+  left: -50rem;
+  width:170%;
+  height: 500%;
+  animation:anistar 60s linear infinite;
+  background-image: radial-gradient(#fff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity:0.5;
+}
+@keyframes anistar{
+  from{
+    transform: translate(0);
+   }
+   to{
+    transform: translateY(-135rem);
+   }
+}
+@keyframes anirotate{
+  from{
+    transform: rotate(360deg);
+   }
+   to{
+    transform: rotate(0);
+   }
+}
