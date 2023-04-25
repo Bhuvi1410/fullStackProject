@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<nav class="navbar navbar-expand-sm bg-ligth navbar-dark">
+  <ul class = "navbar-nav ms-auto">
+   <div class="logo">
+      <a  class="navbar-brand" href="#"><img [src]="'./assets/logo-design.jpg'" alt="logo" title="student management system">STUDENT  MANAGEMENT  SYSTEM</a>
+      </div>
+    <li class="nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="home-page" routerLinkActive="" class="nav-link"  class="bn39"  style="margin-left: 6px" title="Home page"><i class="fa fa-home" ></i>Home</a>
+    </li>
+    <li class="nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="about-page" routerLinkActive="active" class="nav-link"class="bn39" style="margin-left: 6px" title="About us"><i class="fa fa-info-circle"></i>About Us</a>
+    </li>
+    <li class="nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="contact-page" routerLinkActive="active" class="nav-link" class="bn39" style="margin-left: 6px" title="Contact details"><i class="fa fa-phone"></i>ContactUs</a>
+    </li>
+    <li class="nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="profile-card" routerLinkActive="active" class="nav-link" class="bn39" style="margin-left: 6px" title="Profile"><i class="fa fa-user"></i>Profile</a>
+    </li>
+    
+      <li class = "nav-item">
+        <a  *ngIf="loginService.isUserLoggedIn()" routerLink="students" class="nav-link" class="bn39" style="margin-left: 6px" title="Student list"><i class="fa fa-list"></i>Student List</a>
+      </li>
+    <li class = "nav-item">
+        <a *ngIf="loginService.isUserLoggedIn()" routerLink="create-student" class="nav-link" class="bn39" style="margin-left: 6px" title="Add new student" ><i class="fa fa-plus"></i>Add Student</a>
+      </li>
+    <li class = "nav-item">
+        <a  *ngIf="loginService.isUserLoggedIn()" routerLink="feedback-form" class="nav-link" class="bn39" style="margin-left: 6px" title="Feedback"><i class="fa fa-comments-o"></i>Feedback</a> 
+      </li>
+    <li class = "nav-item">
+       <a *ngIf="loginService.isUserLoggedIn()" routerLink="student-logout" class="nav-link" class="bn39" style="margin-left: 6px" title="Exit" ><i class="fa fa-sign-out" ></i>LogOut</a> 
+   </li>
+   <li class = "nav-item">
+      <a *ngIf="!loginService.isUserLoggedIn()" routerLink="student-login" class="nav-link" class="bn39" style="margin-left: 6px" title="Login"><i class="fa fa-sign-in"></i>Login</a> 
+    </li>
+  
+</ul>
+ 
+  </nav>
+
+
+<!--<h1 class="text-center"> {{title}} --->
+<div class = "container">
+  <router-outlet></router-outlet>
+</div>  
+
+
+  

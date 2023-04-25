@@ -1,0 +1,45 @@
+<!--Contact details-->
+<div class="background">
+    <div class="container">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          
+        </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>CONTACT</span>
+              <span>US</span>
+            </div>
+            <div class="app-contact">CONTACT INFO : 8220508921</div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input type="text" class="app-form-control" placeholder="NAME"  name="name" [(ngModel)]="name" >
+              </div>
+              <div class="app-form-group">
+                <input  type="email" class="app-form-control" placeholder="EMAIL"name="email" [(ngModel)]="email">
+              </div>
+              <div class="app-form-group">
+                <input type="number" class="app-form-control" placeholder="CONTACT NO" name="contactno" [(ngModel)]="contactno">
+              </div>
+              <div class="app-form-group message">
+                <input type="text" class="app-form-control" placeholder="MESSAGE" name="message" [ngModel]="message">
+              </div>
+              
+                <button (click)="Contact()" class="app-form-button">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  
+  
